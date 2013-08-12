@@ -24,6 +24,19 @@ public class ArrayList<T> implements List<T> {
   }
 
   public T get(final int index) {
+    if(index >= size) {
+      // TODO: Throw exception
+      return null;
+    }
+    int i=0;
+    // TODO: Implement BTREE to speed up lookups
+    for(T iObj : this) {
+      if(i==index) {
+        return iObj;
+      }
+      i++;
+    }
+    // TODO: could not find?
     return null;
   }
 

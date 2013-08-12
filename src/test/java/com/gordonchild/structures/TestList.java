@@ -16,18 +16,8 @@ import org.junit.runners.JUnit4;
 
 public class TestList {
   @Test
-  public void thisAlwaysPasses() {
-  }
-
-  @Test
   public void testInitializer() {
     List<Integer> arr = new ArrayList<Integer>();
-  }
-
-  @Test
-  @Ignore
-  public void thisFails() {
-    assertTrue(false);
   }
 
   @Test
@@ -39,7 +29,6 @@ public class TestList {
   }
 
   @Test
-  @Ignore
   public void testAddGet() {
     List<Integer> arr = new ArrayList<Integer>();
     arr.add(new Integer(5));
